@@ -1,0 +1,39 @@
+.work-model {
+  .work-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 117px;
+      height: 117px;
+      border-radius: 117px;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 5px 20px 0 rgba($black, .1);
+      svg {
+        width: 58px;
+        height: 58px;
+      }
+    }
+    margin-bottom: 30px;
+  }
+  .work-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    @include media-breakpoint-up('xl') {
+      max-width: 155px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .work-content {
+    font-size: 14px;
+    padding: 0 20px;
+    i {
+      font-weight: $font-weight-bold;
+    }
+    margin-bottom: 40px;
+  }
+}

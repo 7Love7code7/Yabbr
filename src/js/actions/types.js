@@ -1,0 +1,7 @@
+export default {
+  // auth
+  LOGIN: 'LOGIN',
+  LOGOUT: 'LOGOUT',
+  REGISTER: 'REGISTER',
+  PASSWORD_RESET: 'PASSWORD_RESET'
+};

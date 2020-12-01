@@ -1,0 +1,53 @@
+.icon {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.icon-spin {
+  svg, img {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+}
+
+.icon-svg {
+  svg {
+    .fill {
+      fill: currentColor !important;
+    }
+    .stroke {
+      stroke: currentColor !important;
+    }
+  }
+  @each $key, $color in $theme-colors {
+    &.icon-#{$key} {
+      svg {
+        .fill {
+          fill: $color !important;
+        }
+        .stroke {
+          stroke: $color !important;
+        }
+      }
+    }
+  }
+}
+
+.icon-circle {
+  border-radius: 300px;
+  background-color: #00000030;
+  img, svg {
+    padding: 4px;
+  }
+}

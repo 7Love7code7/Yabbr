@@ -1,0 +1,99 @@
+.site-header {
+  padding-top: 40px;
+  .navigation-bar {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 10000;
+    @include media-breakpoint-down('md') {
+      flex-wrap: wrap !important;
+    }
+    .navbar-logo {
+      margin-left: 43px;
+      @include media-breakpoint-down('lg') {
+        margin-left: 20px;
+      }
+      .nav-link {
+        padding-left: 0;
+      }
+      img {
+        width: 129px;
+        height: 41px;
+      }
+    }
+    .navbar-right {
+      margin-right: 40px;
+      align-items: center;
+      .sms-content {
+        position: relative;
+        margin-right: 10px;
+        @media screen and (min-width: 1300px) {
+          margin-right: 30px;
+        }
+        .title {
+          font-weight: $font-weight-medium;
+          font-size: 20px;
+          line-height: 1;
+          margin-bottom: 4px;
+          white-space: nowrap;
+          span {
+            font-weight: $font-weight-semibold;
+          }
+        }
+        .number {
+          position: absolute;
+          right: 0;
+          bottom: -14px;
+          letter-spacing: 4px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down('md') {
+    .main-menu {
+      display: none !important;
+    }
+  }
+  .main-menu {
+    .nav {
+      justify-content: space-between;
+      .navbar {
+        padding: 0;
+        align-items: center;
+        .nav-item {
+          .nav-link {
+            color: $white;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            position: relative;
+            .nav-active {
+              display: none;
+              position: absolute;
+              bottom: 0px;
+              left: 40%;
+              div {
+                width: 5px;
+                height: 5px;
+                background: $info;
+                border-radius: 5px;
+                margin-right: 8px;
+              }
+            }
+            &:hover {
+              .nav-active {
+                display: flex;
+              }
+            }
+            &.active {
+              .nav-active {
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

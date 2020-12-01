@@ -1,0 +1,44 @@
+.section-different {
+  padding-top: 85px;
+  padding-bottom: 90px;
+  background-image: url('../img/backgrounds/light-blue-background.jpg');
+  background-position: center;
+  background-size: cover;
+  .title-underline {
+    margin-bottom: 107px;
+  }
+  @include media-breakpoint-down('md') {
+    padding-top: 58px;
+    padding-bottom: 20px;
+    .title-underline {
+      margin-bottom: 56px;
+    }
+  }
+  .expand-row {
+    @include media-breakpoint-up('xl') {
+      display: flex;
+      justify-content: space-between;
+      .col-item {
+        width: 20%;
+      }
+    }
+    @include media-breakpoint-down('lg') {
+      .col-item {
+        width: 33%;
+        margin: auto;
+      }
+    }
+    @include media-breakpoint-down('md') {
+      .col-item {
+        width: 50%;
+        margin: auto;
+      }
+    }
+    @include media-breakpoint-down('sm') {
+      .col-item {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}

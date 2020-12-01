@@ -1,0 +1,10 @@
+/dist
+/reports
+/node_modules
+/temporar
+/.vscode
+/compilation-stats.json
+.env
+.DS_Store
+package-lock.json
+yarn.lock

@@ -1,0 +1,32 @@
+$container-gutter-width: 22px;
+
+$fonts: (
+  'Omnes-light':            ( family: 'Omnes',      file: 'OmnesLig',       weight: 300, style: normal ),
+  'Omnes-medium':           ( family: 'Omnes',      file: 'OmnesMed',       weight: 500, style: normal ),
+  'Omnes-semibold':         ( family: 'Omnes',      file: 'OmnesSem',       weight: 600, style: normal ),
+  'Omnes-BoldItalic':       ( family: 'Omnes',      file: 'OmnesBolIta',    weight: 700, style: normal )
+);
+
+$font-weights: (
+  'light': $font-weight-light,
+  'normal': $font-weight-normal,
+  'medium': $font-weight-medium,
+  'bold': $font-weight-bold,
+  'semibold': $font-weight-semibold
+);
+
+$headings: (
+  'h1': ('font-size': $h1-font-size, 'letter-spacing': 0, 'line-height': 60px),
+  'h2': ('font-size': $h2-font-size, 'letter-spacing': 0, 'line-height': 50px),
+  'h3': ('font-size': $h3-font-size, 'letter-spacing': 0, 'line-height': 40px),
+  'h4': ('font-size': $h4-font-size, 'letter-spacing': 0, 'line-height': 25px),
+  'h5': ('font-size': $h5-font-size, 'letter-spacing': 0, 'line-height': 22px),
+  'h6': ('font-size': $h6-font-size, 'letter-spacing': 0, 'line-height': 16px)
+);
+
+$font-sizes: (
+  'lg': ('font-size': $font-size-lg),
+  'md': ('font-size': $font-size-base * 1.125),
+  'base': ('font-size': $font-size-base),
+  'sm': ('font-size': $font-size-sm),
+);

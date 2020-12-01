@@ -1,0 +1,66 @@
+.section-contact {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  background-image: url('../img/backgrounds/gradient.jpg');
+  background-position: center;
+  background-size: cover;
+  @include media-breakpoint-down('md') {
+    padding-top: 36px;
+    padding-bottom: 20px;
+  }
+  .title-underline {
+    margin-bottom: 35px;
+  }
+  .contact-text {
+    max-width: 521px;
+  }
+  .btn-group {
+    width: 100%;
+    .btn {
+      width: 50%;
+    }
+  }
+  .sms-body {
+    margin-top: 34px;
+    .content {
+      font-size: 20px;
+      font-weight: $font-weight-light;
+      margin-bottom: 24px;
+    }
+    .call-sms {
+      display: inline-block;
+      .title {
+        letter-spacing: -2px;
+        margin-bottom: 20px;
+      }
+      position: relative;
+      .number {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+    }
+  }
+  form {
+    .form-group {
+      margin-top: 16px;
+      margin-bottom: 25px;
+      label {
+        color: $white;
+        font-size: 22px;
+        margin-bottom: 16px;
+      }
+      select option {
+        color: $gray-900;
+        &:hover {
+          color: $white;
+        }
+      }
+      .btn {
+        margin-top: 30px;
+      }
+    }
+  }
+}

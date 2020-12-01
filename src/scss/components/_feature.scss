@@ -1,0 +1,12 @@
+.additional-feature {
+  display: flex;
+  align-items: center;
+  svg {
+    width: 46px;
+    height: 46px;
+  }
+  .feature-text {
+    margin-left: 12px; 
+  }
+  margin-bottom: 17px;
+}

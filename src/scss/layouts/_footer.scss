@@ -1,0 +1,48 @@
+.site-footer {
+  background-color: $secondary;
+  padding-top: 111px;
+  padding-bottom: 58px;
+  position: relative;
+  @include media-breakpoint-down('md') {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+  .nav {
+    align-items: flex-end;
+    .navbar-logo {
+      margin-right: 120px;
+      .navbar-brand {
+        img {
+          width: 129px;
+          height: 41px;
+        }
+        margin-bottom: 18px;
+      }
+    }
+    .navbar {
+      padding-bottom: 0;
+      .nav-item {
+        .nav-link {
+          padding-bottom: 0;
+        }
+      }
+    }
+    @include media-breakpoint-down('lg') {
+      .navbar-logo {
+        margin-right: 0;
+      }
+    }
+    @include media-breakpoint-down('md') {
+      justify-content: center;
+      .navbar-logo {
+        text-align: center;
+        width: 100%;
+      }
+      .navbar {
+        .nav-link {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

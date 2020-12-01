@@ -1,0 +1,27 @@
+@each $font-key, $font-item in $fonts {
+  $font-family: map-get($font-item, 'family');
+  $font-weight: map-get($font-item, 'weight');
+  $font-style: map-get($font-item, 'style');
+  $font-file: map-get($font-item, 'file');
+  @font-face {
+    font-family: $font-family;
+    src: url('../fonts/' + $font-file + '.eot');
+    src: url('../fonts/' + $font-file + '.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/' + $font-file + '.woff') format('woff'),
+         url('../fonts/' + $font-file + '.ttf')  format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+.font-weight-light {
+  font-weight: $font-weight-light;
+}
+
+.font-weight-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}

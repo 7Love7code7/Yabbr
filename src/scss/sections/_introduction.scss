@@ -1,0 +1,34 @@
+.section-introduction {
+  padding-top: 90px;
+  padding-bottom: 111px;
+  background-image: url('../img/backgrounds/dark-blue-background.jpg');
+  background-position: center;
+  background-size: cover;
+  margin-top: -10px;
+  @include media-breakpoint-down('md') {
+    padding-top: 45px;
+    padding-bottom: 54px;
+  }
+  .title-underline {
+    letter-spacing: -2px !important;
+    @include media-breakpoint-down('md') {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    @media screen and (max-width: 436px) {
+      .underline-info {
+        &.underline-md-center {
+          &:after {
+            left: 50%;
+          }
+        }
+      }
+    }
+  }
+  .diagram-image {
+    width: 100%;
+    @include media-breakpoint-down('sm') {
+      max-width: 210px;
+    }
+  }
+}

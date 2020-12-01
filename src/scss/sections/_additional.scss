@@ -1,0 +1,35 @@
+.section-additional {
+  padding-top: 87px;
+  background: $white;
+  position: relative;
+  z-index: 0;
+  @include media-breakpoint-down('md') {
+    padding-top: 0;
+    .title-underline {
+      text-align: center;
+      .underline-info {
+        &:after {
+          left: 45%;
+        }
+      }
+    }
+  }
+  .title-underline {
+    margin-top: 38px;
+  }
+  .phone-image {
+    padding-left: 72px;
+    padding-top: 16px;
+    img {
+      width: 100%;
+    }
+  }
+  .additional-features {
+    margin-top: 65px;
+    margin-bottom: 40px;
+    columns: 2;
+    @include media-breakpoint-down('lg') {
+      columns: 1;
+    }
+  }
+}
